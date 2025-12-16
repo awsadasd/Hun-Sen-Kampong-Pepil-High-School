@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>សាលាវិទ្យាល័យហ៊ុនសែនកំពង់ពពិល | Hun Sen Kampong Pepil High School</title>
+    <style>
+        /* CSS Reset & 100% Configuration */
+        * {
+            box-sizing: border-box;
+            /* ធានាថា border និង padding មិនធ្វើឲ្យទទឹងលើស 100% */
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100vh; /* ប្រើ vh ដើម្បីធានាថា កម្ពស់ពេញអេក្រង់ */
+            font-family: 'Khmer OS Muol Light', 'Arial', sans-serif;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        /* Main Container: 100% Width */
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            /* កំណត់ទទឹងអតិបរមាសម្រាប់អេក្រង់ធំ, តែនៅតែ 100% សម្រាប់អេក្រង់តូច */
+            max-width: 1400px; 
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header Styling */
+        header {
+            width: 100%;
+            background-color: #363538; /* ពណ៌ខៀវដូចសាលា */
+            background-image: url('https://image2url.com/images/1765467840969-8db3572b-76c2-4a03-b166-81848459b169.jpg');
+            color: white;
+            padding: 29px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin: 50px 0 0;
+            font-size: 1em;
+            opacity: 0.8;
+        }
+
+        /* Navigation Bar */
+        nav {
+            width: 100%;
+            background-color: #ecececf0; /* ផ្ទៃខាងក្រោយ */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* ជួយឲ្យបាក់ជួរពេលអេក្រង់តូច */
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 15px 25px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #ffffff;
+        }
+
+        /* Main Content Section */
+        main {
+            padding: 20px;
+            width: 100%;
+            line-height: 1.6;
+        }
+
+        .hero-section {
+            width: 100%;
+            height: 400px;
+            background: url('https://via.placeholder.com/1400x400.png?text=BBU+Campus+Image') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            margin-bottom: 30px;
+        }
+
+        .hero-section h2 {
+            font-size: 3em;
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        .card {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer Styling */
+        footer {
+            width: 100%;
+            background-color: #e6d2d2;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            nav ul li a {
+                padding: 10px 15px;
+                font-size: 0.9em;
+            }
+
+            .hero-section {
+                height: 250px;
+            }
+
+            .hero-section h2 {
+                font-size: 2em;
+            }
+
+            main {
+                padding: 10px;
+            }
+        }
+   <!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Header</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+            overflow-x: hidden;
+        }
+
+        header h1 {
+            font-size: 50px;
+            font-weight: bold;
+            color: #ffffff;
+            text-shadow:
+                2px 2px 0 #000,
+                4px 4px 0 #120efd,
+                6px 6px 0 #00000088;
+
+            /* Animation properties */
+            opacity: 0;
+            transform: translateY(-50px) scale(0.8);
+            animation: fadeSlideIn 1.5s forwards;
+        }
+
+        header p {
+            font-size: 24px;
+            color: #fff;
+            text-shadow:
+                1px 1px 0 #beb5b5,
+                2px 2px 0 #0b13ff;
+
+            opacity: 0;
+            transform: translateY(50px) scale(0.8);
+            animation: fadeSlideIn 1.5s forwards;
+            animation-delay: 0.5s; /* ចាប់ផ្តើមក្រោយ h1 0.5s */
+        }
+
+        /* Keyframes for animation */
+        @keyframes fadeSlideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(var(--y, 0)) scale(0.8);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>សាលាវិទ្យាល័យហ៊ុនសែនកំពង់ពពិល</h1>
+            <p>Hun Sen Kampong Pepil High School</p>
+        </header>
+    </div>
+
+</body>
+</html>
+
+
+        <<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Color Blur Text</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff; /* ពណ៌ផ្ទៃខាងក្រោយ */
+            margin: 0;
+            padding: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-size: 21px;
+            font-weight: bold;
+            color: #4111ec; /* ពណ៌អក្សរ */
+            text-shadow: 
+                2px 2px 5px rgba(0,0,0,0.5),
+                -2px -2px 5px rgba(255,255,255,0.3);
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #6bc1ff; /* ពណ៌នៅពេល hover */
+            text-shadow: 0 0 15px #6bc1ff;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#home">ទំព័រដើម</a></li>
+            <li><a href="#programs">កម្មវិធីសិក្សា</a></li>
+            <li><a href="#admissions">ការចុះឈ្មោះ</a></li>
+            <li><a href="#research">ការស្រាវជ្រាវ</a></li>
+            <li><a href="#contact">ទំនាក់ទំនង</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>
+
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education for Future</title>
+
+    <style>
+        .hero-section {
+            background-image: url('https://image2url.com/images/1765469393771-8737e333-15ce-4953-93b9-a3798136ea0d.jpg'); /* ដាក់រូបនៅទីនេះ */               
+            background-position: center;           
+            background-repeat: no-repeat;          
+            padding: 150px 50px;                   
+            text-align: center;                    
+            color: rgb(248, 248, 248);                          
+            position: relative;
+        }
+
+         
+        }
+
+        .hero-section h2 {
+            position: relative;
+            z-index: 1;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <section id="home" class="hero-section">
+            <h2>អប់រំដើម្បីអនាគត (Education for Future)</h2>
+        </section>
+    </main>
+
+</body>
+</html>
+            <section class="intro">
+                <h2>ស្វាគមន៍មកកាន់ </h2>
+                <p>សាលាវិទ្យាល័យហ៊ុនសែនកំពង់ពពិល ផ្តល់ជូននូវកម្មវិធីសិក្សាដែលមានគុណភាពខ្ពស់ ស្របតាមស្តង់ដារជាតិ និងអន្តរជាតិ ដើម្បីបណ្តុះបណ្តាលធនធានមនុស្សប្រកបដោយចំណេះដឹង និងសីលធម៌។</p>
+            </section>
+
+            <section id="programs">
+                <h2>កម្មវិធីសិក្សាសំខាន់ៗ</h2>
+                <div class="content-grid">
+                    <div class="card">
+                        <h3>វិទ្យាសាស្ត្រកុំព្យូទ័រ</h3>
+                        <p>រៀនអំពីការសរសេរកូដ បច្ចេកវិទ្យាបណ្តាញ និងសន្តិសុខព័ត៌មានវិទ្យា។</p>
+                    </div>
+                    <div class="card">
+                        <h3>រដ្ឋបាលពាណិជ្ជកម្ម</h3>
+                        <p>ផ្តោតលើការគ្រប់គ្រង ហិរញ្ញវត្ថុ ទីផ្សារ និងសេដ្ឋកិច្ច។</p>
+                    </div>
+                    <div class="card">
+                        <h3>នីតិសាស្ត្រ</h3>
+                        <p>សិក្សាអំពីប្រព័ន្ធច្បាប់ជាតិ និងអន្តរជាតិ សម្រាប់ការអនុវត្តវិជ្ជាជីវៈ។</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2025 សាលាវិទ្យាល័យហ៊ុនសែនកំពង់ពពិល | រក្សាសិទ្ធិគ្រប់យ៉ាង</p>
+            <p id="contact">ភូមិកំពង់ពពិល ឃុំកំពង់ពពិលស្រុកពារាំង​ ខេត្តព្រៃវែង | ទូរស័ព្ទ: 023-XXX-XXX</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+.hero-section {
+    background-image: url('https://image2url.com/images/1765467840969-8db3572b-76c2-4a03-b166-81848459b169.jpg'); /* ដាក់ផ្លូវរូបភាព */
+    background-size: cover;                 /* ឲ្យរូបពេញផ្ទៃ */
+    background-position: center;           /* កណ្តាល */
+    background-repeat: no-repeat;          /* មិនឲ្យធ្វើចម្លង */
+    padding: 100px 20px;                   /* ឲ្យមានចន្លោះជុំវិញអក្សរ */
+    color: white;                          /* ប្ដូរអក្សរឲ្យមើលឃើញ */
+    text-align: center;                    /* អក្សរកណ្ដាល */
+}
